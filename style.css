@@ -54,11 +54,6 @@ p { margin: 0 0 1rem; max-width: 38rem; }
 .status { font-size: 0.85rem; font-weight: 600; color: var(--muted); }
 .current .status, .done .status { color: var(--accent); }
 
-.projects { list-style: none; margin: 0; padding: 0; }
-.projects li { padding: 1.1rem 0; border-top: 1px solid var(--rule); }
-.projects li:last-child { border-bottom: 1px solid var(--rule); }
-.projects h3 { margin: 0; font-size: 1.05rem; font-weight: 600; }
-.projects p { margin: 0.25rem 0 0; color: var(--muted); font-size: 0.975rem; }
 
 footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: 0.9rem; }
 

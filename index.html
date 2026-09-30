@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alexandre Arizzi | Cloud & DevOps</title>
-<meta name="description" content="IT operations engineer in Warsaw moving into cloud and DevOps. AWS, Terraform, Python, Go.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<main>
-<nav class="site-nav" aria-label="Main">
-  <a class="brand" href="index.html">Alexandre Arizzi</a>
-  <ul>
-    <li><a href="index.html" aria-current="page">Home</a></li>
-    <li><a href="log.html">Learning log</a></li>
-    <li><a href="writeups.html">Write-ups</a></li>
-    <li><a href="projects.html">Projects</a></li>
-  </ul>
-</nav>
-
+---
+layout: default
+title: Cloud & DevOps
+---
 <h1>Alexandre Arizzi</h1>
 <p class="role">Cloud and DevOps engineer in the making, based in Warsaw.</p>
 <ul class="links">
@@ -30,12 +13,12 @@
 <section>
   <h2>About</h2>
   <p>I have four years in IT operations, from Active Directory and Fortinet networks to AWS, Terraform, Python and Go. I now want to design and own cloud infrastructure, not only run tickets on it.</p>
-  <p>This site tracks my path to the AWS Solutions Architect Associate certification and the projects I build after it. Everything here comes from my own labs.</p>
+  <p>This site tracks my path to the AWS Solutions Architect Associate certification. Everything here comes from my own labs.</p>
 </section>
 
 <section>
   <h2>Right now</h2>
-  <p>Week 1 of 8: account setup, IAM and S3. <a href="log.html">See the full learning log</a>.</p>
+  <p>Week 1 of 8: account setup, IAM and S3. See the <a href="{{ '/log/' | relative_url }}">learning log</a> and the <a href="{{ '/writeups/' | relative_url }}">write-ups</a>.</p>
 </section>
 
 <section>
@@ -43,8 +26,3 @@
   <p>AWS Certified Solutions Architect Associate: <span class="muted">in preparation</span></p>
   <p>HashiCorp Terraform Associate: <span class="muted">planned</span></p>
 </section>
-
-<footer><p>Built with plain HTML and hosted on GitHub Pages.</p></footer>
-</main>
-</body>
-</html>

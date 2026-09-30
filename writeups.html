@@ -1,44 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Write-ups | Alexandre Arizzi</title>
-<meta name="description" content="Lab write-ups: what I built on AWS, what broke, and what I learned.">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<main>
-<nav class="site-nav" aria-label="Main">
-  <a class="brand" href="index.html">Alexandre Arizzi</a>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="log.html">Learning log</a></li>
-    <li><a href="writeups.html" aria-current="page">Write-ups</a></li>
-    <li><a href="projects.html">Projects</a></li>
-  </ul>
-</nav>
-
+---
+layout: default
+title: Write-ups
+description: Lab write-ups. What I built on AWS, what broke, and what I learned.
+permalink: /writeups/
+---
 <h1 class="page-title">Write-ups</h1>
 <p class="role">What I built in each lab, what broke, and what I learned from it.</p>
 
-<!--
-  HOW TO ADD A WRITE-UP
-  1. Copy writeup-template.html to a new file, e.g. writeup-week-1-iam-s3.html
-  2. Fill it in.
-  3. Add an <li> at the TOP of the list below (newest first), then delete the "empty" paragraph.
-
-  <li>
-    <time datetime="2026-10-11">11 Oct 2026</time>
-    <a href="writeup-week-1-iam-s3.html">Week 1: locking down a new AWS account</a>
-    <p>MFA, a budget alarm, and an assumable role. What I got wrong with bucket policies.</p>
-  </li>
--->
+{% if site.posts.size == 0 %}
 <p class="empty">The first write-up will appear after the week 1 lab.</p>
+{% else %}
 <ul class="posts">
+  {% for post in site.posts %}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
 </ul>
-
-<footer><p>Built with plain HTML and hosted on GitHub Pages.</p></footer>
-</main>
-</body>
-</html>
+{% endif %}
