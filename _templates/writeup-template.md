@@ -1,0 +1,48 @@
+---
+# HOW TO USE
+# 1. Copy this file into the _posts/ folder.
+# 2. Rename it with the date and a short slug: 2026-10-18-week-2-vpc-by-hand.md
+#    (the date must not be in the future, or the post will not show up).
+# 3. Fill in the front matter below and the sections. Commit and push. That is all:
+#    the write-ups page updates itself.
+#
+# Only personal labs here. No employer or client names, internal systems,
+# or real configurations. Redact account IDs, keys and IP addresses.
+title: "Week 2: building a VPC by hand"
+description: "One sentence shown in the write-ups list."
+duration: "3 hours"
+tools: "AWS console, AWS CLI"
+---
+
+## Goal
+
+One or two sentences: what I wanted to build or understand, and why.
+
+## What I built
+
+A short description of the architecture. Put diagrams in an `assets/` folder at the root of the repo.
+
+![Diagram of the VPC with two public and two private subnets](/assets/vpc-diagram.png)
+
+## What broke
+
+The symptom, exactly as I saw it. For example: the private instance could not reach the internet.
+
+## How I found the cause
+
+1. What I checked first, and what I ruled out.
+2. What I checked next.
+3. The cause: for example, the private route table had no route to the NAT gateway.
+
+```bash
+aws ec2 describe-route-tables --route-table-ids rtb-xxxxxxxx
+```
+
+## What I would do differently
+
+- A decision I would change, and why.
+- The cost or security trade-off I noticed.
+
+## What I learned
+
+- One rule I can now explain without notes.
