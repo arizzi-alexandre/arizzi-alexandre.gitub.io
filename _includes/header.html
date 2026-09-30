@@ -1,8 +1,0 @@
-<nav class="site-nav" aria-label="Main">
-  <a class="brand" href="{{ '/' | relative_url }}">{{ site.author }}</a>
-  <ul>
-    <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a></li>
-    <li><a href="{{ '/log/' | relative_url }}"{% if page.url == '/log/' %} aria-current="page"{% endif %}>Learning log</a></li>
-    <li><a href="{{ '/writeups/' | relative_url }}"{% if page.url contains '/writeups' %} aria-current="page"{% endif %}>Write-ups</a></li>
-  </ul>
-</nav>
