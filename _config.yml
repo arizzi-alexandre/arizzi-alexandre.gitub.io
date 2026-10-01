@@ -13,10 +13,7 @@ defaults:
       layout: writeup
 
 
-permalink: /notes/:title/
-defaults:
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: note
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/

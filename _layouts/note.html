@@ -7,5 +7,5 @@ layout: default
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %b %Y" }}</time>{% if page.duration %}, about {{ page.duration }}{% endif %}{% if page.tools %}, tools: {{ page.tools }}{% endif %}
   </p>
   {{ content }}
-  <a class="back" href="{{ '/notes/' | relative_url }}">Back to all write-ups</a>
+  <a class="back" href="{{ '/notes/' | relative_url }}">Back to all notes</a>
 </article>
