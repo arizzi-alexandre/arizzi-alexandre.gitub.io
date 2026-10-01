@@ -17,6 +17,6 @@ permalink: /notes/:title/
 defaults:
   - scope:
       path: ""
-      type: posts
+      type: notes
     values:
-      layout: notes
+      layout: note
