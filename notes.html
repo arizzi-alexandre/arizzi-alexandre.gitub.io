@@ -1,0 +1,22 @@
+---
+layout: default
+title: Write-ups
+description: Lab write-ups. What I built on AWS, what broke, and what I learned.
+permalink: /writeups/
+---
+<h1 class="page-title">Write-ups</h1>
+<p class="role">What I built in each lab, what broke, and what I learned from it.</p>
+
+{% if site.notes.size == 0 %}
+<p class="empty">The first write-up will appear after the week 1 lab.</p>
+{% else %}
+<ul class="notes">
+  {% for note in site.notes %}
+  <li>
+    <time datetime="{{ note.date | date_to_xmlschema }}">{{ note.date | date: "%-d %b %Y" }}</time>
+    <a href="{{ note.url | relative_url }}">{{ note.title }}</a>
+    {% if note.description %}<p>{{ note.description }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
