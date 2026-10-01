@@ -2,8 +2,10 @@ title: Alexandre Arizzi
 author: Alexandre Arizzi
 description: IT operations engineer in Warsaw moving into cloud and DevOps. AWS, Terraform, Python, Go.
 
-# Write-ups live in _posts/ and get clean URLs like /writeups/my-lab/
-permalink: /writeups/:title/
+collections:
+  notes:
+    output: true
+    permalink: /notes/:title/
 
 defaults:
   - scope:
@@ -11,9 +13,10 @@ defaults:
       type: posts
     values:
       layout: writeup
+      permalink: /writeups/:title/
 
-
-collections:
-  notes:
-    output: true
-    permalink: /notes/:title/
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
