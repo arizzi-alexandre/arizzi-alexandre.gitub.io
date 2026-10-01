@@ -11,3 +11,12 @@ defaults:
       type: posts
     values:
       layout: writeup
+
+
+permalink: /notes/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: notes
