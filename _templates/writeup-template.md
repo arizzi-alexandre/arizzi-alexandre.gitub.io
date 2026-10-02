@@ -6,6 +6,11 @@
 # 3. Fill in the front matter below and the sections. Commit and push. That is all:
 #    the write-ups page updates itself.
 #
+# Photos and diagrams:
+# - Put image files in the repository's assets/ folder, for example assets/vpc-diagram.png.
+# - Reference them from Markdown with: ![Description of the image](/assets/vpc-diagram.png)
+# - Use lowercase filenames without spaces, and do not upload account IDs, keys, or private data.
+#
 # Only personal labs here. No employer or client names, internal systems,
 # or real configurations. Redact account IDs, keys and IP addresses.
 title: "Week 2: building a VPC by hand"
@@ -20,9 +25,9 @@ One or two sentences: what I wanted to build or understand, and why.
 
 ## What I built
 
-A short description of the architecture. Put diagrams in an `assets/` folder at the root of the repo.
+A short description of the architecture. Add a photo or diagram from the repository's `assets/` folder if it helps explain the lab.
 
-![Diagram of the VPC with two public and two private subnets](/assets/vpc-diagram.png)
+![Description of the VPC diagram](/assets/vpc-diagram.png)
 
 ## What broke
 
