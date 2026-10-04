@@ -5,7 +5,7 @@ description: "Describe and understand different available storages in EC2"
 duration: "59 minutes"
 tools: "AWS interface"
 ---
-# AWS SAA-C03 Notes
+
 
 ## EBS (Elastic Block Store)
 
@@ -45,3 +45,12 @@ Storage **physically attached** to the instance.
 | **io1 / io2** | SSD | Higher performance, critical business apps |
 | **st1** | HDD | Low cost, frequently accessed: big data, log processing |
 | **sc1** | HDD | Lowest cost, infrequently accessed |
+
+## EBS multi-attach
+- Attach the same EBS to different EC2 in the same AZ.
+- Each instance has full read and write permissions
+- Up to 16 instances
+ #### Use case
+ Applications that must manage concurrent write operations
+
+## Amazon EFS - Elastic file System
