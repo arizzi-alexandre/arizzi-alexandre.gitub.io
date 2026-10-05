@@ -54,3 +54,8 @@ Storage **physically attached** to the instance.
  Applications that must manage concurrent write operations
 
 ## Amazon EFS - Elastic file System
+For linux only. EFS is a storage accessible from different AZ by EC2 but is expensive.
+A few type of thoughtput modes: 
+1. Elastic: Scale automatically base on the workload.
+2. Provisionned: COnfigure the throughtput regardless the size of the storage
+3. Bursting:  Throughput scales with storage size
