@@ -13,6 +13,7 @@ tools: "AWS interface"
 
 - Bound to a specific **AZ** (snapshot it to move across AZs)
 - Can be detached from one instance and attached to another
+- Root EBS volume is deleted on instance termination, while other added volume are not.
 
 ## Snapshot Types
 
@@ -35,7 +36,7 @@ Lets you customize your EC2 instances by pre-baking:
 Storage **physically attached** to the instance.
 
 - ⚡ Higher I/O speed
-- ⚠️ **Not persistent**: data is lost if the machine fails
+- ⚠️ **Not persistent**: data is lost if the machine fails. But the data survives if the machine reboot.
 
 ## EBS Volume Types
 
